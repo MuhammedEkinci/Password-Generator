@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+    margin: 30px;
+    width: 50%;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.container h2 {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1mm solid black;
+}
+
+.textBox {
+    width: 450px;
+    height: 250px;
+    position: relative;
+    border: 1px dotted black;
+    background-color: white;
+}
+
+
+
