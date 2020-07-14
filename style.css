@@ -9,24 +9,34 @@ h1 {
 
 }
 
+/*container for site*/
 .container {
-    margin: 30px;
+    position: relative;
+    margin: 0 auto;
     width: 50%;
     background-color: #eeeeee;
     padding: 20px;
 }
 
+/*adds style to h2 and adds a border under h2*/
 .container h2 {
     font-family: 'Roboto', sans-serif;
     border-bottom: 1mm solid black;
 }
 
+/*makes a box that displays text*/
 .textBox {
     width: 450px;
     height: 250px;
     position: relative;
     border: 1px dotted black;
     background-color: white;
+}
+
+/*css for button*/
+.container .passBtn {
+    margin-top: 10px;
+    margin-left: 30%;
 }
 
 
