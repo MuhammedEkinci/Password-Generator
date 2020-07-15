@@ -1,6 +1,6 @@
 
 //DOM elements
-var displayPass = document.getElementById('display');//display password
+var displayPass = document.getElementById('display');//display final password
 
 var password_lengthEl = prompt("How many characters is your password going to be?");
 var password_lowercaseEl = confirm("Do you wnat lowercase characters");
@@ -51,7 +51,7 @@ function generatePassword(lower, upper, symbol, number, length) {
 
     //console.log('typeCount : ', typesArr);
 
-    if(typesCount = 0) { //return nothing if nothing is true
+    if(typesCount === 0) { //return nothing if nothing is true
         return '';
     }
 
@@ -64,8 +64,13 @@ function generatePassword(lower, upper, symbol, number, length) {
         });                                                 //(ex. lower, upper, etc... it will call specific functions from the object randomFunction)
     }
 
-    console.log(typesCount);
-}
+    var finalPassword = generatedPassword.slice(0, length);// .slice removes values from 
+                                                            //variable from the beginning till its length
+                                                             // puts final password into variable
+    return finalPassword;
+
+}                                                
+
 
 //-----generator functions-----
 
